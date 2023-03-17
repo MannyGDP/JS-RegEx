@@ -31,7 +31,9 @@ Expected Output:
 
 */ 
  
-let phoneReg = /write your regex here/
+let phoneReg =  /(:?\+[Il]* ?)?[\d()–-][\d ()\-"–OОli_|]{6,20}[\dOОli|]\d/gmi
+let phone = sampleApp.match(phoneReg);
+console.log(phone)
 
 /* 
 
@@ -51,7 +53,9 @@ Expected Output:
 
 */ 
 
-let emailReg = /write your regex here/
+let emailReg = /.+\@.+\..+/=
+let foundEmail = sampleApp.match(emailReg);
+console.log(foundEmail)
 
 /* 
 
@@ -67,4 +71,6 @@ Expected Output:
 
 */ 
 
-let statusReg = /write your regex here/
+let statusReg = /Status: ([a-z0-9])/
+let foundStatus = sampleApp.match(statusReg);
+console.log(foundStatus)
