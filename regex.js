@@ -71,6 +71,6 @@ Expected Output:
 
 */ 
 
-let statusReg = /Status: ([a-z0-9])/
+let statusReg = /Status/i
 let foundStatus = sampleApp.match(statusReg);
 console.log(foundStatus)
